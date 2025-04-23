@@ -7,7 +7,7 @@ const AddOperation = ({ onOperation }) => {
     onOperation("+");
   };
 
-  return <BasicButton label="+" onClick={handleAdd} />;
+  return <BasicButton label="+" onClick={handleAdd} sx={{   height: "90px",}} />;
 };
 
 export default AddOperation;
