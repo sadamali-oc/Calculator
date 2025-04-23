@@ -1,5 +1,7 @@
 import React from "react";
-import BasicButton from '../../../../../components/atoms/basicButton'
+import BasicButton from "../../../../../components/atoms/basicButton";
+
+
 const AddOperation = ({ onOperation }) => {
   const handleAdd = () => {
     onOperation("+");
@@ -9,4 +11,3 @@ const AddOperation = ({ onOperation }) => {
 };
 
 export default AddOperation;
-

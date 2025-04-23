@@ -2,9 +2,11 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import { describe, it, expect } from "vitest";
 import "@testing-library/jest-dom/vitest";
-import DisplayWithLabel from "./DisplayWithLabel";
+import DisplayWithLabel from "../displayWithLabel";
 
 describe("DisplayWithLabel", () => {
+
+  //Test 01
   it("renders label and value correctly", () => {
     render(<DisplayWithLabel label="Result" value="123" />);
 

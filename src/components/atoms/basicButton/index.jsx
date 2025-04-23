@@ -1,19 +1,20 @@
 import React from "react";
 import Button from "@mui/material/Button";
 
-
-// label - displayed on the button
-// onClick - function to be called when the button is clicked
-const BasicButton = ({ label, onClick }) => {
+function BasicButton({ label, onClick }) {
   return (
-    <Button
-      variant="contained"
-      onClick={()=> onClick(label)}
-      sx={{  minWidth: "50px", height: "40px", margin: "3px" }}
-    >
-      {label}
-    </Button>
+    <div>
+      <Button
+        variant="contained"
+        sx={{ minWidth: "50px", height: "40px", margin: "2px" }}
+        onClick={() => {
+          onClick(label);
+        }}
+      >
+        {label}
+      </Button>
+    </div>
   );
-};
+}
 
 export default BasicButton;

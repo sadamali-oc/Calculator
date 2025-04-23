@@ -33,7 +33,9 @@ const CalculatorContainer = () => {
   );
 
   const resultDisplay = (
-    <DisplayWithLabel label="Result" value={result} testId="Result" />
+    <DisplayWithLabel label="Result" value={result} testId="Result" 
+  
+    />
   );
 
   const keypad = (

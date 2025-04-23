@@ -3,7 +3,7 @@ import InputDisplay from '../../atoms/inputDisplay';
 
 const DisplayWithLabel = ({ label, value, testId }) => {
   return (
-    <div style={{ display: 'flex', gap: '8px', alignItems: 'center', marginBottom: '1px' }}>
+    <div sx={{ display: 'flex',gap:'5px', alignItems: 'center', marginBottom: '2px' }}>
       <strong>{label}:</strong>
       <InputDisplay value={value} data-testid={testId} />
     </div>
