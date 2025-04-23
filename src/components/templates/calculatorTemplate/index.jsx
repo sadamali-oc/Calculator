@@ -7,12 +7,11 @@ const CalculatorTemplate = ({ title, expressionDisplay, resultDisplay, keypad })
       <Box
         sx={{
           padding: "20px",
-          maxWidth: "450px",
-          width: "100%",
+          maxWidth: "390px",
           margin: "0 auto",
           boxShadow: 3,
           borderRadius: "8px",
-          bgcolor: "#ffffff2c"
+          bgcolor: "#aba1d552"
         }}
       >
         <Typography variant="h4" sx={{ marginBottom: "16px", textAlign: "center" }}>

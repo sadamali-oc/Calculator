@@ -6,7 +6,7 @@ function BasicButton({ label, onClick ,sx={}}) {
     <div>
       <Button
         variant="contained"
-        sx={{ minWidth: "70px", height: "40px", margin: "2px",
+        sx={{ minWidth: "90px", height: "40px", margin: "2px", bgcolor: "#22186bf8",
           ...sx }}
         onClick={() => {
           onClick(label);

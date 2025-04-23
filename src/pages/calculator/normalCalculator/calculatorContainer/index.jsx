@@ -33,7 +33,7 @@ const CalculatorContainer = () => {
   );
 
   const resultDisplay = (
-    <DisplayWithLabel label="Result" value={result} testId="Result" 
+    <DisplayWithLabel label="Output" value={result} testId="Result" 
   
     />
   );
