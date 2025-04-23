@@ -1,6 +1,5 @@
 import React from "react";
-import BasicButton from "../../atoms/basic-button/BasicButton";
-
+import BasicButton from "../../atoms/basicButton";
 //Rows of buttons for the keypad
 //Arrays of button labels
 function KeyPadRow({ keys = [], onClick }) {

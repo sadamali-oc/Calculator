@@ -1,5 +1,5 @@
 import React from "react";
-import CalculatorPage from "./pages/calculator/normal-calculator/CalculatorPage";
+import CalculatorPage from "./pages/calculator/normalCalculator";
 const App = () => {
   return (
     <div>

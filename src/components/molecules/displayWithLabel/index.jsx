@@ -1,5 +1,5 @@
 import React from 'react';
-import InputDisplay from '../../atoms/inputDisplay/InputDisplay';
+import InputDisplay from '../../atoms/inputDisplay';
 
 const DisplayWithLabel = ({ label, value, testId }) => {
   return (

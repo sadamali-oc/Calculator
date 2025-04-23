@@ -1,9 +1,9 @@
 import React from "react";
-import KeyPadRow from "../../molecules/keyPadRow/KeyPadRow";
-import AddOperation from "../../../pages/calculator/normal-calculator/normalCalAtoms/AddOperation";
-import SubtractOperation from "../../../pages/calculator/normal-calculator/normalCalAtoms/SubtractOperation";
-import MultiplyOperation from "../../../pages/calculator/normal-calculator/normalCalAtoms/MultiplyOperation";
-import DivideOperation from "../../../pages/calculator/normal-calculator/normalCalAtoms/DivideOperation";
+import KeyPadRow from "../../molecules/keyPadRow";
+import AddOperation from "../../../pages/calculator/normalCalculator/normalCalAtoms/addOperation";
+import SubtractOperation from "../../../pages/calculator/normalCalculator/normalCalAtoms/subtractOperation";
+import MultiplyOperation from "../../../pages/calculator/normalCalculator/normalCalAtoms/multiplyOperation";
+import DivideOperation from "../../../pages/calculator/normalCalculator/normalCalAtoms/divideOperation";
 
 const Keypad = ({ onButtonClick, onOperation }) => {
   const keypadRows = [

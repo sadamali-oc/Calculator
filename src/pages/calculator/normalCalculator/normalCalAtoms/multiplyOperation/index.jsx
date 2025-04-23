@@ -1,5 +1,5 @@
 import React from "react";
-import BasicButton from "../../../../components/atoms/basic-button/BasicButton";
+import BasicButton from "../../../../../components/atoms/basicButton";
 
 const MultiplyOperation = ({ onOperation }) => {
   const handleMultiply = () => {

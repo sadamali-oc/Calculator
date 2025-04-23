@@ -1,14 +1,26 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
-import Keypad from "./KeyPad"; 
-import { vi } from "vitest"; 
-import '@testing-library/jest-dom'; 
-
+import Keypad from '../keypad'
+import { vi } from "vitest";
+import "@testing-library/jest-dom";
 
 describe("Keypad Component", () => {
   it("renders number buttons correctly", () => {
     render(<Keypad onButtonClick={() => {}} onOperation={() => {}} />);
-    const buttons = ["7", "8", "9", "4", "5", "6", "1", "2", "3", "0", ".", "C"];
+    const buttons = [
+      "7",
+      "8",
+      "9",
+      "4",
+      "5",
+      "6",
+      "1",
+      "2",
+      "3",
+      "0",
+      ".",
+      "C",
+    ];
     buttons.forEach((button) => {
       expect(screen.getByText(button)).toBeInTheDocument();
     });
@@ -20,5 +32,4 @@ describe("Keypad Component", () => {
     fireEvent.click(screen.getByText("+"));
     expect(onOperation).toHaveBeenCalledWith("+");
   });
-
 });

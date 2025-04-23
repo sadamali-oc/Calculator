@@ -1,5 +1,5 @@
 import React from "react";
-import CalculatorContainer from "./calculator-container/CalculatorContainer";
+import CalculatorContainer from "./calculatorContainer";
 import "./CalculatorPage.css";  
 
 const CalculatorPage = () => {

@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import Keypad from "../../../../components/organisms/keyPad/KeyPad";
-import DisplayWithLabel from "../../../../components/molecules/displayWithLabel/DisplayWithLabel";
-import CalculatorTemplate from "../../../../components/templates/calculatorTemplate/calculatorTemplate";
+import Keypad from "../../../../components/organisms/keypad";
+import DisplayWithLabel from "../../../../components/molecules/displayWithLabel";
+import CalculatorTemplate from "../../../../components/templates/calculatorTemplate";
 import { evaluate } from "mathjs";
-
 
 const CalculatorContainer = () => {
   const [expression, setExpression] = useState("");
