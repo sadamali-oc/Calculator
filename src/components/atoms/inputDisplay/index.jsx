@@ -6,9 +6,9 @@ const InputDisplay = ({ value, ...props }) => {
     <TextField
       value={value}
       variant="outlined"
-      fullWidth
+     
       disabled
-      sx={{ marginBottom: "10px", height: "60px" }}
+      sx={{ marginBottom: "10px", height: "60px" , width:'400px'}}
       {...props}
     />
   );
