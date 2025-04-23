@@ -58,7 +58,7 @@ const Keypad = ({ onButtonClick, onOperation }) => {
         sx={{
           gridColumn: "4 / span 1",
           gridRow: "4 / span 2",
-          width: "170px",
+          width: "190px",
         }}
       />
     </Box>
