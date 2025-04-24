@@ -12,6 +12,8 @@ const CalculatorContainer = () => {
     if (key === "C") {
       setExpression("");
       setResult("");
+    } else if (key == "CE") {
+      setExpression((prev) => prev.slice(0, -1));
     } else if (key === "=") {
       try {
         const safeResult = evaluate(expression);
@@ -33,9 +35,7 @@ const CalculatorContainer = () => {
   );
 
   const resultDisplay = (
-    <DisplayWithLabel label="Output" value={result} testId="Result" 
-  
-    />
+    <DisplayWithLabel label="Output" value={result} testId="Result" />
   );
 
   const keypad = (

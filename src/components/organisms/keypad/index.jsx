@@ -23,6 +23,7 @@ const Keypad = ({ onButtonClick, onOperation }) => {
     "0",
     ".",
     "C",
+    "CE"
   ];
 
   return (
@@ -42,6 +43,7 @@ const Keypad = ({ onButtonClick, onOperation }) => {
       <SubtractOperation onOperation={onOperation} />
       <MultiplyOperation onOperation={onOperation} />
       <DivideOperation onOperation={onOperation} />
+      
       <AddOperation
         onOperation={onOperation}
         sx={{
@@ -50,6 +52,7 @@ const Keypad = ({ onButtonClick, onOperation }) => {
           width: "170px",
         }}
       />
+      
       <PercentOperation onOperation={onOperation} />
 
       <BasicButton
@@ -61,6 +64,8 @@ const Keypad = ({ onButtonClick, onOperation }) => {
           width: "190px",
         }}
       />
+
+      
     </Box>
   );
 };
