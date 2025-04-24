@@ -7,7 +7,6 @@ import BasicButton from "../basicButton";
 import "@testing-library/jest-dom/vitest";
 
 describe("BasicButton", () => {
-  
   // Test case 1
   it("renders with the correct label", () => {
     render(<BasicButton label="1" />);
@@ -17,7 +16,6 @@ describe("BasicButton", () => {
   //Test case 2
   it("calls onClick handler when clicked", () => {
     let clickedLabel = null;
-
     const handleClick = (label) => {
       clickedLabel = label;
     };
