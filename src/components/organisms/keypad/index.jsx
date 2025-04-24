@@ -1,4 +1,3 @@
-// Keypad.jsx
 import React from "react";
 import BasicButton from "../../atoms/basicButton";
 import AddOperation from "../../../pages/calculator/normalCalculator/normalCalAtoms/addOperation";
