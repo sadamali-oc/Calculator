@@ -1,17 +1,13 @@
 import React from "react";
 import BasicButton from "../../atoms/basicButton";
-//Rows of buttons for the keypad
-//Arrays of button labels
-function KeyPadRow({ keys = [], onClick }) {
-  return (
-    <div style={{ display: "flex", justifyContent: "center", gap: "30px" }}>
-      {keys.map((key) => (
+import { Stack } from "@mui/material";
 
-        <BasicButton key={key} label={key} onClick={() => onClick(key)} />
-        
-      ))}
-    </div>
-  );
-}
+const KeyPadRow = ({ keys = [], onClick }) => (
+  <Stack direction="row" spacing={4} justifyContent="center">
+    {keys.map((key) => (
+      <BasicButton key={key} label={key} onClick={onClick} />
+    ))}
+  </Stack>
+);
 
 export default KeyPadRow;
