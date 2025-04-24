@@ -5,39 +5,32 @@ import CalculatorTemplate from "../../templates/calculatorTemplate";
 import { evaluate } from "mathjs";
 
 const CalculatorContainer = () => {
-  const [expression, setExpression] = useState("");
-  const [result, setResult] = useState("");
+  const [expression, setExpression] = useState(""); 
+  const [result, setResult] = useState("");        
 
   const handleButtonClick = (key) => {
     if (key === "C") {
-      setExpression("");
-      setResult("");
-    } else if (key == "CE") {
-      setExpression((prev) => prev.slice(0, -1));
+      setExpression("");  
+      setResult("");      
+    } else if (key === "CE") {
+      setExpression((prev) => prev.slice(0, -1));  
     } else if (key === "=") {
       try {
         const safeResult = evaluate(expression);
         setResult(safeResult);
+        setExpression("");    
       } catch (error) {
-        setResult("Error");
+        setResult("Error");   
+        setExpression("");    
       }
     } else {
-      setExpression((prev) => prev + key);
+      setExpression((prev) => prev + key); 
     }
   };
 
-  const expressionDisplay = (
-    <DisplayWithLabel
-      label="Expression"
-      value={expression}
-      testId="Expression"
-    />
-  );
+  const displayValue = `${expression} ${result ?  result : ""}`;
 
-  const resultDisplay = (
-    <DisplayWithLabel label="Output" value={result} testId="Result" />
-  );
-
+  // Keypad for all the buttons
   const keypad = (
     <Keypad onButtonClick={handleButtonClick} onOperation={handleButtonClick} />
   );
@@ -45,8 +38,9 @@ const CalculatorContainer = () => {
   return (
     <CalculatorTemplate
       title="Calculator"
-      expressionDisplay={expressionDisplay}
-      resultDisplay={resultDisplay}
+      expressionDisplay={
+        <DisplayWithLabel label="Expression & Calculator" value={displayValue} testId="Calculator" />
+      }
       keypad={keypad}
     />
   );
