@@ -7,7 +7,7 @@ const KeyPadRow = ({ keys = [], onClick }) => (
 
     {keys.map((key) => (
 
-      //key prop - Unique identifier the button
+      //key prop - Uniquely identifier the button
       <BasicButton key={key} label={key} onClick={onClick} />
 
 

@@ -5,7 +5,11 @@ import CalculatorTemplate from "../../templates/calculatorTemplate";
 import { evaluate } from "mathjs";
 
 const CalculatorContainer = () => {
+  
+  //manage the state of the expression
   const [expression, setExpression] = useState(""); 
+
+  //manage the state of the result
   const [result, setResult] = useState("");        
 
   const handleButtonClick = (key) => {
