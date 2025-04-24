@@ -46,9 +46,10 @@ const CalculatorContainer = () => {
       expressionDisplay={
         <DisplayWithLabel label="Expression & Result" value={displayValue} testId="Calculator" />
       }
+      
       keypad={keypad}
 
-      
+
     />
   );
 };
