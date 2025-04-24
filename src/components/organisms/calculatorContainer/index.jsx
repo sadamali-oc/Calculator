@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Keypad from "../../../../components/organisms/keypad";
-import DisplayWithLabel from "../../../../components/molecules/displayWithLabel";
-import CalculatorTemplate from "../../../../components/templates/calculatorTemplate";
+import Keypad from "../keypad";
+import DisplayWithLabel from "../../molecules/displayWithLabel";
+import CalculatorTemplate from "../../templates/calculatorTemplate";
 import { evaluate } from "mathjs";
 
 const CalculatorContainer = () => {

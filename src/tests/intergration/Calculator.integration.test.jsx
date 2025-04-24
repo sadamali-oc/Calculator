@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import CalculatorContainer from "./../../pages/calculator/normalCalculator/calculatorContainer";
+import CalculatorContainer from "../../components/organisms/calculatorContainer";
 import "@testing-library/jest-dom";
 
 describe("Calculator integration", () => {

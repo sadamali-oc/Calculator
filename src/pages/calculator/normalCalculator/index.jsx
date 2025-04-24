@@ -1,5 +1,5 @@
 import React from "react";
-import CalculatorContainer from "./calculatorContainer";
+import CalculatorContainer from '../../../components/organisms/calculatorContainer';
 import "./CalculatorPage.css";  
 
 const CalculatorPage = () => {

@@ -37,6 +37,7 @@ const Keypad = ({ onButtonClick, onOperation }) => {
       {digitKeys.map((k) => (
         <BasicButton key={k} label={k} onClick={onButtonClick} />
       ))}
+      
 
       <SubtractOperation onOperation={onOperation} />
       <MultiplyOperation onOperation={onOperation} />
