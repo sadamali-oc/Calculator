@@ -9,7 +9,6 @@ import PercentOperation from "../../../pages/calculator/normalCalculator/normalC
 import Box from "@mui/material/Box";
 
 const Keypad = ({ onButtonClick, onOperation }) => {
-  /* 3 columns of digits (left) + 1 column of operators (right) */
   const digitKeys = [
     "7",
     "8",

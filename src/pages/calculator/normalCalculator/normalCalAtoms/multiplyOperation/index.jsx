@@ -3,7 +3,7 @@ import BasicButton from "../../../../../components/atoms/basicButton";
 
 const MultiplyOperation = ({ onOperation }) => {
   const handleMultiply = () => {
-    onOperation("*"); // Add the "*" sign to the expression
+    onOperation("*");
   };
 
   return <BasicButton label="*" onClick={handleMultiply} />;

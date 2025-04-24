@@ -7,7 +7,7 @@ const AddOperation = ({ onOperation }) => {
     onOperation("+");
   };
 
-  return <BasicButton label="+" onClick={handleAdd} sx={{   }} />;
+  return <BasicButton label="+" onClick={handleAdd} />;
 };
 
 export default AddOperation;

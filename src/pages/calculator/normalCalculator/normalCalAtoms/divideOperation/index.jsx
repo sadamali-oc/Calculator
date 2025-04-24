@@ -3,7 +3,7 @@ import BasicButton from "../../../../../components/atoms/basicButton";
 
 const DivideOperation = ({ onOperation }) => {
   const handleDivide = () => {
-    onOperation("/"); // Add the "/" sign to the expression
+    onOperation("/"); 
   };
 
   return <BasicButton label="/" onClick={handleDivide} />;
