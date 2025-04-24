@@ -5,7 +5,7 @@ import CalculatorTemplate from "../../templates/calculatorTemplate";
 import { evaluate } from "mathjs";
 
 const CalculatorContainer = () => {
-  
+
   //manage the state of the expression
   const [expression, setExpression] = useState(""); 
 
@@ -40,12 +40,15 @@ const CalculatorContainer = () => {
   );
 
   return (
+
     <CalculatorTemplate
       title="Calculator"
       expressionDisplay={
         <DisplayWithLabel label="Expression & Result" value={displayValue} testId="Calculator" />
       }
       keypad={keypad}
+
+      
     />
   );
 };
