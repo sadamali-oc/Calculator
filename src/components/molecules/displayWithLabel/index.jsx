@@ -1,13 +1,23 @@
-import React from 'react';
-import InputDisplay from '../../atoms/inputDisplay';
+import React from "react";
+import InputDisplay from "../../atoms/inputDisplay";
+import { Typography, Box } from "@mui/material";
 
-const DisplayWithLabel = ({ label, value, testId }) => {
-  return (
-    <div sx={{ display: 'flex',gap:'5px', alignItems: 'center', marginBottom: '2px' , margined:0}}>
-      <strong>{label}:</strong>
-      <InputDisplay value={value} data-testid={testId} />
-    </div>
-  );
-};
+const DisplayWithLabel = ({ label, value, testId }) => (
+  <Box
+    data-testid={testId}
+    sx={{
+      display: "flex",
+      alignItems: "center",
+      gap: 1,
+      mb: 0.5,
+    }}
+  >
+    <Typography variant="body2" sx={{ minWidth: 90 }}>
+      {label}:
+    </Typography>
+
+    <InputDisplay value={value} />
+  </Box>
+);
 
 export default DisplayWithLabel;

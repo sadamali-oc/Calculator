@@ -6,9 +6,8 @@ const InputDisplay = ({ value, ...props }) => {
     <TextField
       value={value}
       variant="outlined"
-     
       disabled
-      sx={{ marginBottom: "10px", height: "60px" , width:'400px'}}
+      sx={{ marginBottom: "10px", height: "60px", width: "400px" }}
       {...props}
     />
   );
