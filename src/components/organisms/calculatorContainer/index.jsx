@@ -39,7 +39,7 @@ const CalculatorContainer = () => {
     <CalculatorTemplate
       title="Calculator"
       expressionDisplay={
-        <DisplayWithLabel label="Expression & Calculator" value={displayValue} testId="Calculator" />
+        <DisplayWithLabel label="Expression & Result" value={displayValue} testId="Calculator" />
       }
       keypad={keypad}
     />
